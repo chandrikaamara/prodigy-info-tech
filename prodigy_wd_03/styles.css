@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    background-image: url('tic-tac-toe-transformed.jpeg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-position: center; /* Centers the background image */
+}
+
+.container {
+    text-align: center;
+    padding: 20px; /* Add padding to make it more visible */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow to the container */
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Set text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
+}
+
+.icon {
+    font-size: 1.5em; /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+#message {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    height: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow to the message */
+    color:white;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eae2e285;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease-in-out; /* Add transition effect */
+}
+
+.cell:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 0 10px rgba(17, 16, 16, 0.3); /* Add shadow on hover */
+}
+
+#restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow to the button text */
+    transition: background-color 0.2s, border-radius 0.2s; /* Add transition effect */
+    border-radius: 5px; /* Add border radius */
+    border: none; /* Remove default button border */
+}
+
+#restartButton:hover {
+    background-color: #150b0b; /* Change background color on hover */
+    border-radius: 10px; /* Adjust border radius on hover */
+    color:white;
+}
